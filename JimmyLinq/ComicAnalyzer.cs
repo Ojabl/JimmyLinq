@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace JimmyLinq
 {
-    class ComicAnalyzer
+    public static class ComicAnalyzer
     {
-        private static PriceRange CalculatePriceRange(Comic comic, IReadOnlyDictionary<int,decimal> prices)
+        private static PriceRange CalculatePriceRange(Comic comic, IReadOnlyDictionary<int, decimal> prices)
         {
             if (prices[comic.Issue] < 100)
                 return PriceRange.Cheap;
