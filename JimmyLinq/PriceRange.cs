@@ -9,6 +9,6 @@ namespace JimmyLinq
     public enum PriceRange
     {
         Cheap,
-        Expansive,
+        Expensive,
     }
 }
